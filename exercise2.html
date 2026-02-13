@@ -1,0 +1,48 @@
+<!DOCTYPEhtml><htmllang="en">
+
+<head>
+    <metacharset="UTF-8">
+    <metaname="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Lab3 --Exercise 2</title>
+</head>
+
+<body>
+    <h1>JavaScript Lab Exercise 2</h1>
+    <script>
+
+        /*
+        //Exercise 2A: Declaring Functions
+        function add(a, b) {
+            return a + b;
+        }
+        function subtract(a, b) {
+            return a - b;
+        }
+        */
+
+        /*
+        //Exercise 2B: Using Default Parameters
+        function add(a, b = 20) {
+            return a + b;
+        }
+        function subtract(a, b = 6) {
+            return a - b;
+        }
+        */
+
+        //Exercise 2C: Using Arrow Functions
+        let add = (a, b = 20) => a + b;
+        let subtract = (a, b = 6) => a - b;
+        let multiply = (a, b) => a * b;
+        let divide = (a, b) => b !== 0 ? a / b : "Error: Division by zero";
+
+        // Exercise 2D: Understanding Callback Functions
+        function calculator(num1, num2, operation){
+            return operation(num1, num2);
+        }
+
+    </script>
+</body>
+
+
+</html>
